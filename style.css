@@ -7,10 +7,12 @@
 h1 {
   color: #fff;
   font-size: 50px;
+  border: dotted;
+  border-radius: 20px;
 }
 
 body {
-  background-color: rgb(121, 193, 232);
+  background-image: linear-gradient(to bottom right, rgb(50, 183, 216), yellow);
   font-family: 'Jua';
   display: flex;
   flex-wrap: wrap;

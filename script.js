@@ -7,14 +7,15 @@ sounds.forEach((sound) => {
     document.getElementById('buttons').appendChild(btn);
 
     btn.addEventListener('click', () => {
+        stopSounds();
         document.getElementById(sound).play();
     });
 });
 
 function stopSounds() {
     sounds.forEach((sound) => {
-        const song = document.getElementById(sound);
-        song.pause();
-        song.currentTime = 0;
+        const snd = document.getElementById(sound);
+        snd.pause();
+        snd.currentTime = 0;
     });
 }
